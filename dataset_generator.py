@@ -3,10 +3,14 @@ import random
 
 # Initialization
 generator = ImageCaptcha()
-characters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] # Only numeric right now
+characters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 frequency = {}
-count = 2000 # Number of items in dataset, roughly, might be conflicts in generation
+count = 3000 # Number of items in dataset, roughly, might be conflicts in generation
 captcha_size = 5 # Size of captchas 
+
+# Add metadata file that describes the dataset characters
+metadata = open("./dataset/metadata.txt", "w")
+metadata.write(','.join(characters))
 
 for character in characters:
     frequency.update({ character: 0 })
