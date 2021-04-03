@@ -1,9 +1,9 @@
 # APS360: CAPTCHA Bypass
 ### Team 99
-Nicholas Leung
-Coden Mercurius
-Pranavbhai Patel
-Ravi Singh
+* Nicholas Leung
+* Coden Mercurius
+* Pranavbhai Patel
+* Ravi Singh
 
 ### Setup
 1. Clone Git repository
