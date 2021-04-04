@@ -10,7 +10,9 @@
 > git clone git@github.com:natanleung/APS360-captcha-bypass.git
 2. Generate `dataset.zip`
 > $ pip install captcha
+
 > $ python3 dataset_generator.py
+
 > $ zip dataset.zip dataset/
 3. Open `captcha.ipynb` in [Google Colab](https://colab.research.google.com/)
 4. Upload `dataset.zip` into notebook
@@ -23,6 +25,6 @@ CAPTCHA bypass is a deep learning solution to decode basic CAPTCHA images. The t
 
 Each model is utilizes a character segmentation module using `OpenCV.findContours()` to segment the CAPTCHA image into five separate character images.
 
-Furthermore, the notebook contains results and training functionality used during development. Lastly, an end-to-end model is provided that takes in a single CAPTCHA image and outputs the equivalent character string.
+Furthermore, the notebook contains results and training functionality used during development. Lastly, an end-to-end model is provided that takes in a single CAPTCHA image and outputs the decoded character string.
 
 ![upward cheese](upward_cheese.png)
